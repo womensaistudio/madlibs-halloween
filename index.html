@@ -1,0 +1,104 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+<meta charset="utf-8">
+<meta name="viewport" content="width=device-width, initial-scale=1">
+<title>Women's AI Studio Mad Libs</title>
+<link href="https://fonts.googleapis.com/css2?family=Courier+Prime:ital,wght@0,400;0,700;1,400&family=Fraunces:opsz,wght@9..144,700&display=swap" rel="stylesheet">
+<style>
+  :root {
+    --night:#2a1c2e; --paper:#fdf6e9; --ink:#3b2a1f; --muted:#9a8470;
+    --pumpkin:#e0701f; --cider:#a4501b; --empty:#f1e2c8;
+  }
+  * { box-sizing: border-box; }
+  body {
+    margin:0; min-height:100vh; padding:40px 16px; overflow-x:hidden;
+    background: radial-gradient(circle at 50% 0%, #4a2f3d 0%, var(--night) 60%);
+    color:var(--ink); font-family:"Courier Prime", monospace;
+  }
+  .leaf { position:fixed; top:-40px; font-size:24px; pointer-events:none; animation:fall linear infinite; opacity:.85; z-index:0; }
+  @keyframes fall {
+    to { transform: translate(60px, 110vh) rotate(360deg); }
+  }
+  .script {
+    position:relative; z-index:1; max-width:720px; margin:0 auto; background:var(--paper);
+    padding:48px 40px; border-radius:6px; box-shadow:0 24px 60px rgba(0,0,0,.5);
+    border-top:10px solid var(--pumpkin);
+  }
+  .emoji { text-align:center; font-size:2.2rem; margin-bottom:8px; }
+  h1 { font-family:"Fraunces", serif; text-align:center; margin:0 0 6px; font-size:2.1rem; color:var(--cider); line-height:1.15; }
+  .sub { text-align:center; color:var(--muted); margin:0 0 24px; font-style:italic; }
+  .progress { text-align:center; font-size:.9rem; margin-bottom:36px; }
+  .bar { height:10px; background:var(--empty); border-radius:5px; overflow:hidden; margin:8px auto 0; max-width:320px; }
+  .bar div { height:100%; background:linear-gradient(90deg, #f4a340, var(--pumpkin)); transition:width .6s; }
+  p { margin:0 0 14px; line-height:1.65; }
+  .dir { font-style:italic; color:#6e5a48; margin-left:24px; }
+  .who { font-weight:700; text-transform:uppercase; color:var(--cider); }
+  .end { text-align:center; font-weight:700; margin-top:36px; letter-spacing:.2em; }
+  .word { color:var(--pumpkin); font-weight:700; border-bottom:2px dotted var(--pumpkin); cursor:help; }
+  .blank { display:inline-block; min-width:90px; background:var(--empty); color:var(--muted); font-size:.72rem; padding:1px 6px; border-radius:4px; text-align:center; vertical-align:1px; }
+  .credits { margin-top:40px; border-top:1px dashed var(--muted); padding-top:18px; font-size:.85rem; color:var(--muted); text-align:center; line-height:1.7; }
+  .err { color:var(--cider); text-align:center; }
+  @media (max-width:560px) { .script { padding:32px 20px; } h1 { font-size:1.6rem; } .dir { margin-left:12px; } }
+</style>
+</head>
+<body>
+<main class="script" id="app"><p class="sub">Warming up the cider…</p></main>
+<script>
+  // A few falling leaves for cozy vibes.
+  const leaves = ["🍂", "🍁", "🍂", "🎃", "🍁", "🍂", "👻", "🍁"];
+  leaves.forEach((l, i) => {
+    const el = document.createElement("div");
+    el.className = "leaf";
+    el.textContent = l;
+    el.style.left = (i * 12.5 + Math.random() * 8) + "vw";
+    el.style.animationDuration = (10 + Math.random() * 10) + "s";
+    el.style.animationDelay = (-Math.random() * 20) + "s";
+    document.body.appendChild(el);
+  });
+
+  const esc = (s) => s.replace(/[&<>"]/g, (c) => ({ "&":"&amp;","<":"&lt;",">":"&gt;",'"':"&quot;" }[c]));
+
+  function renderPiece(p) {
+    if (p.text !== undefined) return esc(p.text);
+    const b = p.blank;
+    if (b.word) return `<span class="word" title="Blank ${b.id}, by ${esc(b.name || "someone")}">${esc(b.word)}</span>`;
+    const kind = (b.type || "?").split(/[,(]/)[0].trim();
+    return `<span class="blank" title="Waiting for student ${b.id.slice(0, -1)}">${b.id} · ${esc(kind)}</span>`;
+  }
+
+  function renderLine(pieces) {
+    const html = pieces.map(renderPiece).join("");
+    const plain = pieces.map((p) => p.text || "").join("");
+    if (plain.startsWith("TITLE:")) return `<div class="emoji">🎃</div><h1>${html.replace("TITLE:", "").trim()}</h1>`;
+    if (plain.startsWith("SUBTITLE:")) return `<p class="sub">${html.replace("SUBTITLE:", "").trim()}</p>`;
+    if (plain.startsWith("(")) return `<p class="dir">${html}</p>`;
+    if (plain.trim() === "THE END") return `<p class="end">🍂 THE END 🍂</p>`;
+    const m = html.match(/^([A-Z][A-Z ]+):(.*)$/);
+    if (m) return `<p><span class="who">${m[1]}:</span>${m[2]}</p>`;
+    return `<p>${html}</p>`;
+  }
+
+  async function load() {
+    const app = document.getElementById("app");
+    try {
+      const data = await (await fetch("/api/story")).json();
+      if (data.error) throw new Error(data.error);
+      const lines = data.lines.map(renderLine);
+      const pct = data.total ? Math.round((data.filled / data.total) * 100) : 0;
+      const done = data.filled === data.total ? " 🎉 Story complete!" : "";
+      const progress = `<div class="progress">${data.filled} of ${data.total} words filled${done}<div class="bar"><div style="width:${pct}%"></div></div></div>`;
+      lines.splice(2, 0, progress); // right after the title and subtitle
+      const credits = data.writers.length
+        ? `<div class="credits">🕯️ Written by 🕯️<br>${data.writers.map(esc).join(" · ")}</div>` : "";
+      app.innerHTML = lines.join("") + credits;
+    } catch (e) {
+      app.innerHTML = `<p class="err">Couldn't load the story: ${esc(e.message)}</p>`;
+    }
+  }
+
+  load();
+  setInterval(load, 5000); // refresh every 5 seconds, so new pulls show up
+</script>
+</body>
+</html>

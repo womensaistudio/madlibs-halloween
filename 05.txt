@@ -1,0 +1,12 @@
+# Student 05
+# Fill in your name and your TWO words after the colons.
+# Save the file, then commit and push!
+# Don't change anything before the colons.
+
+Your name: 
+
+Word A type: adjective, a describing word (like "fuzzy")
+Word A: 
+
+Word B type: food (like "pickle")
+Word B: 

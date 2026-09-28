@@ -1,0 +1,12 @@
+# Student 01
+# Fill in your name and your TWO words after the colons.
+# Save the file, then commit and push!
+# Don't change anything before the colons.
+
+Your name: 
+
+Word A type: color (like "golden")
+Word A: 
+
+Word B type: number
+Word B: 

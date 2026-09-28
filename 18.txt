@@ -1,0 +1,12 @@
+# Student 18
+# Fill in your name and your TWO words after the colons.
+# Save the file, then commit and push!
+# Don't change anything before the colons.
+
+Your name: 
+
+Word A type: Halloween costume (like "pirate")
+Word A: 
+
+Word B type: plural animal (like "walruses")
+Word B: 

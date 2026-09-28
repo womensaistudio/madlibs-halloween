@@ -1,0 +1,12 @@
+# Student 07
+# Fill in your name and your TWO words after the colons.
+# Save the file, then commit and push!
+# Don't change anything before the colons.
+
+Your name: 
+
+Word A type: plural noun, more than one thing (like "socks")
+Word A: 
+
+Word B type: pet name (like "Mr. Whiskers")
+Word B: 

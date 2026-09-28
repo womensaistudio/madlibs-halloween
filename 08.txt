@@ -1,0 +1,12 @@
+# Student 08
+# Fill in your name and your TWO words after the colons.
+# Save the file, then commit and push!
+# Don't change anything before the colons.
+
+Your name: 
+
+Word A type: plural animal (like "ducks")
+Word A: 
+
+Word B type: exclamation (like "Oh no")
+Word B: 

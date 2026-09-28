@@ -1,0 +1,12 @@
+# Student 16
+# Fill in your name and your TWO words after the colons.
+# Save the file, then commit and push!
+# Don't change anything before the colons.
+
+Your name: 
+
+Word A type: famous person (real or fictional)
+Word A: 
+
+Word B type: flavor (like "mint")
+Word B: 

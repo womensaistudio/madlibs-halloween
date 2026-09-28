@@ -1,0 +1,12 @@
+# Student 10
+# Fill in your name and your TWO words after the colons.
+# Save the file, then commit and push!
+# Don't change anything before the colons.
+
+Your name: 
+
+Word A type: exclamation, something you shout (like "Yikes")
+Word A: 
+
+Word B type: adverb ending in -ly (like "loudly")
+Word B: 

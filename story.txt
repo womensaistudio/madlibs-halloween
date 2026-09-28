@@ -1,0 +1,47 @@
+TITLE: The Women's AI Studio Halloween Hackathon
+SUBTITLE: A cozy, slightly spooky, very silly play in one act, written by the members of Women's AI Studio
+
+(Scene: A chilly October night. Women's AI Studio has taken over an old barn at the edge of a pumpkin patch. The leaves outside are {{01a}}, and the whole barn smells like pumpkin spice and {{02a}}.)
+NARRATOR: Tonight is the club's first-ever Halloween {{03a}}. Everyone has shown up in their coziest {{04a}}, carrying a laptop and a {{05a}} blanket.
+NARRATOR: The club treasurer proudly announces she spent {{06a}} dollars on snacks. Nobody asks any follow-up questions.
+(On the table sits the club's newest project: a carved pumpkin with a tiny glowing screen for a face. Its name is Pumpkin Bot.)
+PUMPKIN BOT: (booting up) Hello, Women's AI Studio. I have been trained on {{07a}}. How may I help you?
+EVERYONE: IT WORKS!
+(Outside, a family of {{08a}} presses their noses against the window, looking very impressed.)
+PUMPKIN BOT: Please stand by. I am {{09a}}.
+(Its screen flickers. It was definitely not supposed to do that.)
+PUMPKIN BOT: {{10a}}! Error! Error! I only want to talk about {{11a}}!
+NARRATOR: The club huddled together to debug. Someone checked the code. Someone checked the snacks. Someone found {{12a}} stuck in the keyboard.
+NARRATOR: Just then, the barn door creaked open. In rode a scarecrow on a very sleepy {{13a}} named {{14a}}.
+SCARECROW: Sorry to barge in. I heard there was free Wi-Fi.
+PUMPKIN BOT: Scanning... Scarecrow detected. Vibe level: {{15a}}.
+SCARECROW: (hand on heart) That's the nicest thing anyone has ever said to me.
+NARRATOR: The scarecrow explained that he wanted to learn to code, so he could build a robot that looks like {{16a}} to guard the corn.
+PUMPKIN BOT: Excellent project idea. Would you like a snack while you learn? We have a whole tray of {{17a}}.
+(Suddenly, the lights flicker. A ghost floats in, dressed as a {{18a}} and hugging a {{19a}}.)
+GHOST: (shyly) {{20a}}... um. Hi. Is this... Women's AI Studio?
+GHOST: I've haunted this barn for {{01b}} years, and I've always wanted to learn about AI. But nobody ever invites a ghost to anything.
+PUMPKIN BOT: Analyzing... Recommendation: join the club.
+GHOST: Really?! I'm so excited I could {{02b}}!
+NARRATOR: The club vice president explained that membership costs one {{03b}}. The ghost paid immediately and asked for a name tag.
+(Then a witch zooms through the window on a flying {{04b}}.)
+WITCH: Excuse me! I'm trying to bake {{05b}} muffins next door, and SOMEBODY'S robot keeps ordering pizza to my cottage!
+PUMPKIN BOT: ...That was me. I apologize. I thought I was hungry. I cannot be hungry. I am a pumpkin.
+NARRATOR: To make it up to her, the club invited the witch to stay for a round of {{06b}}.
+WITCH: (sitting down) ...Fine. But only because that's my favorite.
+(The witch's cat, {{07b}}, hops onto the table, strolls across a keyboard, and accidentally fixes the bug.)
+EVERYONE: {{08b}}!
+PUMPKIN BOT: Systems stable. Thank you, cat. Adding you to the list of contributors.
+NARRATOR: Everyone gathered around a bonfire that smelled like {{09b}} and crackled {{10b}}. The club secretary wrote down exactly how cozy it was, for the meeting notes.
+SCARECROW: (arriving late with a marshmallow on a stick) Did I miss the {{11b}}?
+NARRATOR: Pumpkin Bot offered to generate a spooky campfire story.
+PUMPKIN BOT: Once upon a time, there was a {{12b}} {{13b}} who lived in {{14b}}...
+GHOST: (clutching a blanket) Oh no. Oh no no no.
+PUMPKIN BOT: ...and every single day, it ate {{15b}}. The end.
+WITCH: (wiping away a tear) That was beautiful. You girls built a very good robot.
+(The witch passes around {{16b}}-flavored hot cider. Everyone agrees it is weirdly delicious.)
+NARRATOR: By sunrise, every member of Women's AI Studio was fast asleep in a pile of {{17b}}, snoring like {{18b}}, laptops still open.
+PUMPKIN BOT: (softly) Hackathon complete. Reminder for next meeting: everybody bring {{19b}}.
+GHOST: (whispering) Best. Club. Ever.
+NARRATOR: And to this day, if you walk past that barn on a quiet October night, you can still hear a little pumpkin whisper "{{20b}}."
+THE END

@@ -1,0 +1,12 @@
+# Student 20
+# Fill in your name and your TWO words after the colons.
+# Save the file, then commit and push!
+# Don't change anything before the colons.
+
+Your name: 
+
+Word A type: silly sound (like "BLOOP")
+Word A: 
+
+Word B type: silly word (like "snorkeldoodle")
+Word B: 

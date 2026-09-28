@@ -1,0 +1,12 @@
+# Student 06
+# Fill in your name and your TWO words after the colons.
+# Save the file, then commit and push!
+# Don't change anything before the colons.
+
+Your name: 
+
+Word A type: number
+Word A: 
+
+Word B type: board game or card game (like "Uno")
+Word B: 

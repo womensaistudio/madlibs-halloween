@@ -1,0 +1,12 @@
+# Student 09
+# Fill in your name and your TWO words after the colons.
+# Save the file, then commit and push!
+# Don't change anything before the colons.
+
+Your name: 
+
+Word A type: verb ending in -ing (like "dancing")
+Word A: 
+
+Word B type: a smell (like "wet dog")
+Word B: 

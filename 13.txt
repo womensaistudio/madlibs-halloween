@@ -1,0 +1,12 @@
+# Student 13
+# Fill in your name and your TWO words after the colons.
+# Save the file, then commit and push!
+# Don't change anything before the colons.
+
+Your name: 
+
+Word A type: animal
+Word A: 
+
+Word B type: animal
+Word B: 

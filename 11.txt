@@ -1,0 +1,12 @@
+# Student 11
+# Fill in your name and your TWO words after the colons.
+# Save the file, then commit and push!
+# Don't change anything before the colons.
+
+Your name: 
+
+Word A type: hobby ending in -ing (like "knitting")
+Word A: 
+
+Word B type: noun, something fun (like "piñata")
+Word B: 
