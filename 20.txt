@@ -3,10 +3,10 @@
 # Save the file, then commit and push!
 # Don't change anything before the colons.
 
-Your name: 
+Your name: Golsa 
 
 Word A type: silly sound (like "BLOOP")
-Word A: 
+Word A: BOOP
 
 Word B type: silly word (like "snorkeldoodle")
-Word B: 
+Word B: MorgRizz
