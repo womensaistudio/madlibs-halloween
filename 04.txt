@@ -3,10 +3,11 @@
 # Save the file, then commit and push!
 # Don't change anything before the colons.
 
-Your name: 
+Your name: Pari Thakkar 
 
 Word A type: piece of clothing (like "sweater")
-Word A: 
+Word A: Hoodie
 
 Word B type: household object (like "vacuum")
-Word B: 
+Word B: Lamp
+
