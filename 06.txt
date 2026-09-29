@@ -3,10 +3,11 @@
 # Save the file, then commit and push!
 # Don't change anything before the colons.
 
-Your name: 
+Your name: Audrey Frank
 
 Word A type: number
-Word A: 
+Word A: 14
+
 
 Word B type: board game or card game (like "Uno")
-Word B: 
+Word B: Game of Life
