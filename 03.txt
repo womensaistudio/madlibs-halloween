@@ -3,10 +3,11 @@
 # Save the file, then commit and push!
 # Don't change anything before the colons.
 
-Your name: 
+Your name: Sai 
 
 Word A type: kind of party or event (like "sleepover")
-Word A: 
+Word A: birthday
 
 Word B type: noun, an object (like "sock")
-Word B: 
+Word B: lipstick
+
