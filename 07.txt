@@ -3,10 +3,11 @@
 # Save the file, then commit and push!
 # Don't change anything before the colons.
 
-Your name: 
+Your name: Daisy 
 
 Word A type: plural noun, more than one thing (like "socks")
-Word A: 
+Word A: shoes
 
 Word B type: pet name (like "Mr. Whiskers")
-Word B: 
+Word B: Ms. Joy
+
