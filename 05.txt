@@ -3,10 +3,10 @@
 # Save the file, then commit and push!
 # Don't change anything before the colons.
 
-Your name: 
+Your name: Taruni V
 
 Word A type: adjective, a describing word (like "fuzzy")
-Word A: 
+Word A: Tired
 
 Word B type: food (like "pickle")
-Word B: 
+Word B: Alfredo
